@@ -1,0 +1,147 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typographie */
+body {
+  font-family: 'Times New Roman', Times, serif; /* Remplace par 'serif' comme tu le souhaitais */
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
+  padding: 20px;
+}
+
+/* Navigation */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #756c6c;
+  font-weight: bold;
+}
+
+.top-nav a:hover {
+  color: #b8cad6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Section générique */
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+/* About section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+.about-image img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Social icons */
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.icon:hover {
+  filter: grayscale(0%);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-text {
+    flex: 2;
+  }
+
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+
+
+
+#contact ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
